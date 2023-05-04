@@ -1,0 +1,55 @@
+$fontFamily: Gilroy;
+$weightTitle: 700;
+$weightSubtitle: 300;
+
+.header {
+  @include d-flex();
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.header__centr {
+  .list {
+    @include d-flex();
+  }
+
+  .list-item {
+    margin: 0 13px;
+  }
+
+  .list-link {
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: $weightTitle;
+    font-size: 15px;
+    line-height: 16px;
+    color: #1f2428;
+  }
+
+  .list-link:hover {
+    color: #00c97b;
+  }
+}
+
+.header__right {
+  @include d-flex;
+
+  button {
+    background: linear-gradient(90deg, #00c97b 0%, #00d981 96.96%);
+    box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
+    border-radius: 36px;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: $weightTitle;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    padding: 15px 17px;
+  }
+
+  p {
+    margin-right: 50px;
+  }
+}
